@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Mapping Showcase</title>
+    <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+    <header>
+        <h1>Police Drone Team, Prayagraj</h1>
+        <p>high-quality drone mapped photos and interactive 3D models.</p>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Select Project</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showProject('project1')">Radha Krishna Mandir</a>
+                <a href="#" onclick="showProject('project2')">Project 2</a>
+                <a href="#" onclick="showProject('project3')">Project 3</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="photo-gallery">
+        <h2>Mapping Photos</h2>
+        <div id="project1" class="gallery project">
+	    <img src="D:\Webpage\Radha Krishna Mandir\mandir (1).JPG" alt="Project 2 Photo 1" onclick="openLightbox(this)">
+            <img src="D:\Webpage\Radha Krishna Mandir\mandir (2).JPG" onclick="openLightbox(this)">
+            <img src="D:\Webpage\Radha Krishna Mandir\mandir (3).JPG" onclick="openLightbox(this)">
+	    <img src="D:\Webpage\Radha Krishna Mandir\mandir (4).JPG" onclick="openLightbox(this)">
+        </div>
+        <div id="project2" class="gallery project" style="display:none;">
+            <img src="project2_photo1.jpg" alt="Project 2 Photo 1" onclick="openLightbox(this)">
+            <img src="project2_photo2.jpg" alt="Project 2 Photo 2" onclick="openLightbox(this)">
+            <img src="project2_photo3.jpg" alt="Project 2 Photo 3" onclick="openLightbox(this)">
+        </div>
+        <div id="project3" class="gallery project" style="display:none;">
+            <img src="project3_photo1.jpg" alt="Project 3 Photo 1" onclick="openLightbox(this)">
+            <img src="project3_photo2.jpg" alt="Project 3 Photo 2" onclick="openLightbox(this)">
+            <img src="project3_photo3.jpg" alt="Project 3 Photo 3" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <section id="3d-models">
+        <h2>3D Models</h2>
+        <div id="project1-models" class="model-container project">
+           <iframe src="https://www.mapsmadeeasy.com/maps/public_3D/2b2358a7df964e36a47cd1a9ed9403f1" scrolling="no" title="Maps Made Easy" width="80%" height="400" frameBorder ="0"></iframe>
+        </div>
+        <div id="project2-models" class="model-container project" style="display:none;">
+            <iframe src="project2_model1.html" frameborder="0"></iframe>
+            <iframe src="project2_model2.html" frameborder="0"></iframe>
+        </div>
+        <div id="project3-models" class="model-container project" style="display:none;">
+            <iframe src="project3_model1.html" frameborder="0"></iframe>
+            <iframe src="project3_model2.html" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Drone Mapping Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
