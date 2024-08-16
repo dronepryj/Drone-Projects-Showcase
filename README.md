@@ -1,6 +1,6 @@
-# Drone Mapping Showcase
+# Police Drone Team, Prayagraj
 
-Welcome to the **Drone Mapping Showcase** website. This website is designed to display high-quality drone mapping photos and interactive 3D models for various projects. Clients can explore different projects using a dropdown menu and view images in a larger format using a built-in lightbox feature.
+Welcome to the **Police Drone Team, Prayagraj** website. This website is designed to display high-quality drone mapping photos and interactive 3D models for various projects. Clients can explore different projects using a dropdown menu and view images in a larger format using a built-in lightbox feature.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Welcome to the **Drone Mapping Showcase** website. This website is designed to d
 The project is organized as follows:
 /
 ├── index.html # Main HTML file
-├── styles.css # Stylesheet for the website
+├── style01.css # Stylesheet for the website
 ├── script.js # JavaScript for interactivity
 ├── project1_photo1.jpg # Sample images for Project 1
 ├── project1_photo2.jpg
