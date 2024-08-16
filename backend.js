@@ -13,8 +13,8 @@ function closeLightbox() {
 
 function showProject(projectId) {
     // Hide all project galleries and model containers
-    document.querySelectorAll('.project').forEach(project => {
-        project.style.display = 'none';
+    document.querySelectorAll('.gallery').forEach(gallery => {
+        gallery.style.display = 'none';
     });
     document.querySelectorAll('.model-container').forEach(container => {
         container.style.display = 'none';
