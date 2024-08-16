@@ -136,3 +136,14 @@ footer {
     max-width: 90%;
     max-height: 90%;
 }
+
+.no-models {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
