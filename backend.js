@@ -12,19 +12,29 @@ function closeLightbox() {
 }
 
 function showProject(projectId) {
+    // Hide all project galleries and model containers
     document.querySelectorAll('.project').forEach(project => {
         project.style.display = 'none';
     });
     document.querySelectorAll('.model-container').forEach(container => {
-        const models = container.querySelector('iframe');
-        const noModelsMessage = container.querySelector('.no-models');
-        if (models) {
-            container.style.display = 'block';
+        container.style.display = 'none';
+    });
+
+    // Show the selected project's photo gallery
+    document.getElementById(projectId).style.display = 'block';
+
+    // Show the corresponding 3D model container
+    const modelContainerId = projectId + '-models';
+    const modelContainer = document.getElementById(modelContainerId);
+    if (modelContainer) {
+        modelContainer.style.display = 'block';
+        // Check if there is an iframe or show the no-models message
+        const hasModels = modelContainer.querySelector('iframe');
+        const noModelsMessage = modelContainer.querySelector('.no-models');
+        if (hasModels) {
             noModelsMessage.style.display = 'none';
         } else {
-            container.style.display = 'block';
             noModelsMessage.style.display = 'block';
         }
-    });
-    document.getElementById(projectId).style.display = 'block';
+    }
 }
