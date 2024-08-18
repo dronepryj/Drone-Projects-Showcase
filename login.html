@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Police Drone Team</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style01.css">
 </head>
 <body>
+    <header class="login-header">
+        <h1>Police Drone Team, Prayagraj</h1>
+        <p>High-quality drone mapped photos and interactive 3D models.</p>
+    </header>
+
     <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Login</button>
+        <form id="login-form" onsubmit="return validateLogin()">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
         </form>
-        <p id="error-message" class="error-message"></p>
     </div>
 
-    <script src="login.js"></script>
+    <script src="backend.js"></script>
 </body>
 </html>
