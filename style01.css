@@ -16,15 +16,6 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
 /* Navigation Styling */
 nav {
     background-color: #444;
@@ -87,6 +78,8 @@ section {
     flex-direction: column;
     align-items: center; /* Center children horizontally */
     padding: 20px;
+    max-width: 1200px; /* Optional: limits max width of sections */
+    margin: 0 auto; /* Center section horizontally */
 }
 
 /* Carousel Styles */
@@ -149,6 +142,7 @@ section {
     flex-wrap: wrap;
     justify-content: center; /* Center gallery images */
     gap: 10px;
+    max-width: 100%; /* Ensure gallery does not exceed container width */
 }
 
 .gallery img {
@@ -171,7 +165,8 @@ section {
 }
 
 .model-container {
-    display: inline-block; /* Center container */
+    display: flex; /* Ensure center alignment */
+    justify-content: center; /* Center container horizontally */
     max-width: 80%; /* Adjust width as necessary */
     margin: 20px auto; /* Center horizontally */
 }
