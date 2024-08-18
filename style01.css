@@ -155,9 +155,10 @@ footer {
     border-radius: 8px;
 }
 /* Carousel Container */
+/* Carousel Container */
 .carousel-container {
     position: relative;
-    max-width: 100%;
+    max-width: 600px; /* Adjust to desired width */
     margin: 20px auto;
     overflow: hidden;
     border-radius: 8px;
@@ -170,16 +171,16 @@ footer {
 
 .carousel-image {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    border: none;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Adjust to desired height */
+    object-fit: cover; /* Ensure images cover the container */
 }
 
 .carousel-prev, .carousel-next {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 10px; /* Adjust padding to make buttons smaller */
     margin-top: -22px;
     color: white;
     font-weight: bold;
@@ -193,9 +194,9 @@ footer {
 }
 
 .carousel-prev {
-    left: 0;
+    left: 10px; /* Adjust position */
 }
 
 .carousel-next {
-    right: 0;
+    right: 10px; /* Adjust position */
 }
