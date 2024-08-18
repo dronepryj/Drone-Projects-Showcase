@@ -154,3 +154,48 @@ footer {
     border: 2px solid #fff;
     border-radius: 8px;
 }
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+    z-index: 100;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
