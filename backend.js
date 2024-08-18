@@ -3,7 +3,9 @@
 // Authentication Check
 function checkAuthentication() {
     if (!sessionStorage.getItem('loggedIn')) {
-        window.location.href = 'login.html';
+        if (window.location.pathname !== '/login.html') {
+            window.location.href = 'login.html';
+        }
     }
 }
 
