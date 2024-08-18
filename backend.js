@@ -1,5 +1,16 @@
 // backend.js
 
+// Authentication Check
+function checkAuthentication() {
+    if (!sessionStorage.getItem('loggedIn')) {
+        window.location.href = 'login.html';
+    }
+}
+
+// Call this function on every page that requires authentication
+checkAuthentication();
+
+// Function to handle the lightbox display
 function openLightbox(element) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -7,10 +18,12 @@ function openLightbox(element) {
     lightbox.style.display = 'flex';
 }
 
+// Function to close the lightbox
 function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
 
+// Function to show the selected project's gallery and 3D model
 function showProject(projectId) {
     // Hide all project galleries and model containers
     document.querySelectorAll('.gallery').forEach(gallery => {
@@ -38,3 +51,23 @@ function showProject(projectId) {
         }
     }
 }
+
+// Event listener for login form submission (for login.html page)
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from submitting normally
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Hardcoded credentials
+    const validUsername = 'admin';
+    const validPassword = 'password123';
+
+    if (username === validUsername && password === validPassword) {
+        sessionStorage.setItem('loggedIn', true); // Set login status in session storage
+        window.location.href = 'index.html'; // Redirect to main page after successful login
+    } else {
+        // Display error message
+        document.getElementById('error-message').textContent = 'Invalid username or password';
+    }
+});
