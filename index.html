@@ -8,36 +8,35 @@
 </head>
 <body>
     <header>
-        <h1>Police Drone Team, Prayagraj</h1>
+        <div class="header-container">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Police Drone Team, Prayagraj</h1>
+        </div>
         <p>High-quality drone mapped photos and interactive 3D models.</p>
     </header>
-
-    <nav>
-        <div class="dropdown">
-            <button class="dropbtn">Projects</button>
-            <div class="dropdown-content">
-                <a href="#" onclick="showProject('project1')">Radha Krishna Mandir</a>
-                <a href="#" onclick="showProject('project2')">Police Lines</a>
-                <a href="#" onclick="showProject('project3')">Vahan Yard Jhunsi</a>
-                <a href="#" onclick="showProject('project4')">Sports Day</a>
+    
+    <main>
+        <!-- Content Sections -->
+    <section id="carousel">
+        <h2>Gallery</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="Photos/Radha Krishna Mandir/mandir (1).JPG" alt="Radha Krishna Mandir" class="carousel-image">
+                <img src="Photos/lines/lines (1).jpg" alt="Police Lines" class="carousel-image">
+                <img src="Photos/Vahan Yard Jhunsi/yard (1).JPG" alt="Vahan Yard Jhunsi" class="carousel-image">
+                <img src="Photos/Sports Day/sports (3).jpg" alt="sports 03" class="carousel-image">
+                <img src="Photos/Sports Day/sports (24).jpg" alt="sports 24" class="carousel-image">
+                <img src="Photos/Sports Day/sports (09).jpg" alt="sports 09" class="carousel-image">
             </div>
+            <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
         </div>
-    </nav>
-<section id="carousel">
-    <h2>Image Carousel</h2>
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="Photos/Radha Krishna Mandir/mandir (1).JPG" alt="Radha Krishna Mandir" class="carousel-image">
-            <img src="Photos/lines/lines (1).jpg" alt="Police Lines" class="carousel-image">
-            <img src="Photos/Vahan Yard Jhunsi/yard (1).JPG" alt="Vahan Yard Jhunsi" class="carousel-image">
-            <img src="Photos/Sports Day/sports (3).jpg" alt="sports 03" class="carousel-image">
-            <img src="Photos/Sports Day/sports (24).jpg" alt="sports 24" class="carousel-image">
-            <img src="Photos/Sports Day/sports (09).jpg" alt="sports 09" class="carousel-image">
-        </div>
-        <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
-    </div>
-</section>
+    </section>
+
     <section id="photo-gallery">
         <h2>Photos</h2>
         <div id="project1" class="gallery project">
@@ -56,41 +55,17 @@
             <img src="Photos/Vahan Yard Jhunsi/yard (4).JPG" alt="Ground View" onclick="openLightbox(this)">
             <img src="Photos/Vahan Yard Jhunsi/yard (5).JPG" alt="Ariel Top" onclick="openLightbox(this)">
         </div>
-        <div id="project-sports" class="gallery project" style="display:none;">
-    <img src="Photos/Sports Day/sports (1).jpg" alt="Sports 1" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (2).jpg" alt="Sports 2" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (3).jpg" alt="Sports 3" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (4).jpg" alt="Sports 4" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (5).jpg" alt="Sports 5" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (6).jpg" alt="Sports 6" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (7).jpg" alt="Sports 7" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (8).jpg" alt="Sports 8" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (9).jpg" alt="Sports 9" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (10).jpg" alt="Sports 10" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (11).jpg" alt="Sports 11" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (12).jpg" alt="Sports 12" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (13).jpg" alt="Sports 13" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (14).jpg" alt="Sports 14" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (15).jpg" alt="Sports 15" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (16).jpg" alt="Sports 16" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (17).jpg" alt="Sports 17" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (18).jpg" alt="Sports 18" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (19).jpg" alt="Sports 19" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (20).jpg" alt="Sports 20" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (21).jpg" alt="Sports 21" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (22).jpg" alt="Sports 22" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (23).jpg" alt="Sports 23" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (24).jpg" alt="Sports 24" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (25).jpg" alt="Sports 25" onclick="openLightbox(this)">
-    <img src="Photos/Sports Day/sports (26).jpg" alt="Sports 26" onclick="openLightbox(this)">
-</div>
-
+        <div id="project4" class="gallery project" style="display:none;">
+            <img src="Photos/Sports Day/sports (1).JPG" alt="Test Image" onclick="openLightbox(this)">
+            <img src="Photos/Sports Day/sports (2).jpg" alt="Sports 2" onclick="openLightbox(this)">
+            <img src="Photos/Sports Day/sports (3).jpg" alt="Sports 3" onclick="openLightbox(this)">
+        </div>
     </section>
 
     <section id="3d-models">
         <h2>3D Models</h2>
         <div id="project1-models" class="model-container project">
-            <iframe src="https://www.mapsmadeeasy.com/maps/public_3D/2b2358a7df964e36a47cd1a9ed9403f1" scrolling="no" title="Maps Made Easy" width="80%" height="400" frameBorder="0"></iframe>
+            <iframe src="https://www.mapsmadeeasy.com/maps/public_3D/2b2358a7df964e36a47cd1a9ed9403f1" scrolling="no" title="Maps Made Easy" width="80%" height="400" frameborder="0"></iframe>
             <div class="no-models" style="display: none;">No 3D models available</div>
         </div>
         <div id="project2-models" class="model-container project" style="display: none;">
@@ -102,8 +77,9 @@
         <div id="project4-models" class="model-container project" style="display: none;">
             <div class="no-models">No 3D models available</div>
         </div>
-    </section>
-
+        </section>
+    </main>
+    
     <footer>
         <p>&copy; 2024 Drone Mapping Inc. All rights reserved.</p>
     </footer>
@@ -113,7 +89,29 @@
         <img id="lightbox-img" class="lightbox-img" src="" alt="">
     </div>
 
+    <div class="sidebar">
+        <ul>
+            <li class="sidebar-item">
+                <a href="#">Projects</a>
+                <ul class="submenu">
+                    <li><a href="#" onclick="showProject('project1')">Radha Krishna Mandir</a></li>
+                    <li><a href="#" onclick="showProject('project2')">Police Lines</a></li>
+                    <li><a href="#" onclick="showProject('project3')">Vahan Yard Jhunsi</a></li>
+                    <li><a href="#" onclick="showProject('project4')">Sports Day</a></li>
+
+                </ul>
+            </li>
+            <li class="sidebar-item"><a href="#">About</a></li>
+            <li class="sidebar-item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- Scripts -->
     <script src="backend.js"></script>
     <script src="carousel.js"></script>
 </body>
+
 </html>

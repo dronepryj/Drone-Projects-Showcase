@@ -26,7 +26,8 @@ function prevSlide() {
 }
 
 // Initialize carousel
-showSlides();
-
-// Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
+document.addEventListener('DOMContentLoaded', function() {
+    showSlides();
+    // Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+});
